@@ -219,7 +219,7 @@ The math involved in calculating the derivatives is very complicated. I know bec
 
 <script type="math/tex; mode=display">
 \begin{aligned}
-dZ^{[2]} &= A^{[2]} - Y \text { where } Y_{m \times 1} \text{ are the training labels } \\
+dZ^{[2]} &= A^{[2]} - Y \text { (}Y_{m \times 1} \text{ are training labels) } \\
 dW^{[2]} &= \frac{1}{m} dZ^{[2]}A^{[1]^T} \\
 db^{[2]} &= \frac{1}{m} \sum dZ^{[2]} \\
 dZ^{[1]} &= \left( W^{[2]^T}dZ^{[2]} \right) \cdot \left( g^{\prime[2]}(Z^{[1]}) \right) \\

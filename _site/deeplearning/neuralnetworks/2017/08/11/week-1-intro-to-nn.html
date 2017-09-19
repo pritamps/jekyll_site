@@ -10,7 +10,7 @@
   <meta name="description" content="Table of Contents">
 
   <link rel="stylesheet" href="/assets/main.css">
-  <link rel="canonical" href="https://pritamps.github.io/deeplearning/neuralnetworks/2017/08/11/week-1-intro-to-nn.html">
+  <link rel="canonical" href="http://localhost:4000/deeplearning/neuralnetworks/2017/08/11/week-1-intro-to-nn.html">
   <link rel="alternate" type="application/rss+xml" title="Programming Blog" href="/feed.xml">
   
   <!-- Google Fonts - Inconsolata -->
@@ -52,11 +52,6 @@
             
           
             
-            
-          
-            
-            
-            <a class="page-link" href="/jekyllbuild_files/">jekyllbuild_files</a>
             
           
             
@@ -133,7 +128,7 @@
 
 <p>Here is a carefully constructed illutration that shows the in-depth workings of a single neuron as it is commonly represented in Computer Science.</p>
 
-<p><img src="https://pritamps.github.io/assets/dl_week1/nn_basic.jpg" alt="A not-so-helpful illustration of a neuron" />
+<p><img src="http://localhost:4000/assets/dl_week1/nn_basic.jpg" alt="A not-so-helpful illustration of a neuron" />
 <em>This illustration doesn’t illustrate much other than my inexperience with drawing software</em></p>
 
 <p>“Okay fine. The function that the neuron applies can be any linear function, right? What is the class of activation function that you can use?”, someone pipes in from the back.</p>
@@ -144,7 +139,7 @@
 
 <p>These days however, the RELU (REctified Linear Unit) is much more popular (shown in the ugly figure below). Apparently, it works much better with optimization algorithms such as Gradient Descent 🤷‍, even though there is that obvious discontinuity in the derivative. Maybe we’ll figure out how this works some day in the future, you and me.</p>
 
-<p><img src="https://pritamps.github.io/assets/dl_week1/relu.jpg" alt="REctified Linear Unit" />
+<p><img src="http://localhost:4000/assets/dl_week1/relu.jpg" alt="REctified Linear Unit" />
 <em>They could have just called it the RLU instead of RELU. Why the silly acronym?</em></p>
 
 <p>So, to summarise, neuron takes input X, applies the RELU function to it, and generates Y as the output, which can either zero or positive. All clear? Good!</p>
@@ -155,7 +150,7 @@
 
 <p>Neurons can be stacked together in a variety of ways, some of which are mind-bogglingly complex, but thankfully we don’t have to think about that yet. Right now, imagine them stacked in layers, each layer feeding into the one ahead of it. Here’s a figure for ya if my words aren’t that well chosen.</p>
 
-<p><img src="https://pritamps.github.io/assets/dl_week1/nn_with_layers.jpg" alt="A feedforward neural network" />
+<p><img src="http://localhost:4000/assets/dl_week1/nn_with_layers.jpg" alt="A feedforward neural network" />
 <em>A feedforward neural network. Note that the figure is incomplete. Each neuron can link to ALL neurons in the next layer</em></p>
 
 <p>So here’s what happens when you have the input vector:</p>
@@ -201,7 +196,7 @@
 
 <p>Deep Learning is just the application of Large Neural Networks to problems with large amounts of data.</p>
 
-<p><img src="https://pritamps.github.io/assets/dl_week1/data_vs_performance.jpg" alt="Performance of Machine Learning Algorithms" />
+<p><img src="http://localhost:4000/assets/dl_week1/data_vs_performance.jpg" alt="Performance of Machine Learning Algorithms" />
 <em>Performance of Machine Learning Algorithms versus the amount of data available</em></p>
 
 <p>If you stare at the figure above long enough, you’ll see what’s going on. Deep Learning is in top right of that graph.</p>
@@ -232,8 +227,24 @@
 
   </div>
   
-  
+    
 
+  <div id="disqus_thread"></div>
+  <script>
+    var disqus_config = function () {
+      this.page.url = 'http://localhost:4000/deeplearning/neuralnetworks/2017/08/11/week-1-intro-to-nn.html';
+      this.page.identifier = 'http://localhost:4000/deeplearning/neuralnetworks/2017/08/11/week-1-intro-to-nn.html';
+    };
+    (function() {
+      var d = document, s = d.createElement('script');
+      s.src = 'https://pritamps.disqus.com/embed.js';
+      s.setAttribute('data-timestamp', +new Date());
+      (d.head || d.body).appendChild(s);
+    })();
+  </script>
+  <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+
+  
 
 
   <script type="text/javascript">
