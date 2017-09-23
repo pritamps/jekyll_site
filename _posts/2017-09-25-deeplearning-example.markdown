@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Deep Learning Implementation"
-date:   2017-08-24 10:25:00 +0530
+date:   2017-09-25 10:25:00 +0530
 categories: deeplearning neuralnetworks
 latexscript: js/katex_render.js
 ---
