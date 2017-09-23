@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Deep Learning - Forward Propagation (with code!)"
+title:  "Deep Learning Implementation"
 date:   2017-08-24 10:25:00 +0530
 categories: deeplearning neuralnetworks
 latexscript: js/katex_render.js
