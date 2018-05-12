@@ -12,6 +12,8 @@ Instead of covering the same ground over and over (networks, layers, nodes, you 
 
 If any of the following seems new or weird to you, feel free to go back over the previous tutorials and posts. A good place to start would be [the introductory post on this blog][deep-learning-introduction].
 
+$$ \alpha + \beta $$
+
 The main steps to learning with neural networks are:
 
 1. Initialise the nodes and variables

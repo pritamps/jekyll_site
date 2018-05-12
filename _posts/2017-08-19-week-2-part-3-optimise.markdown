@@ -118,6 +118,8 @@ b &= b + \displaystyle \frac{1}{m} db \\
 \end{aligned}
 </script>
 
+
+
 3. Repeat steps 1, 2, and 3 till the value of <script type="math/tex"> J </script> converges, i.e. it does not change with more iterations, or changes within a preset small value.
 
 Some explanation of what's going on here is probably required, so here it is:

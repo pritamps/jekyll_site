@@ -138,7 +138,7 @@ An algorithm *very* commonly used for numerical optimisation problems is Gradien
 2. But you can go straight down, you can go down at this angle, or that angle...how do you choose? On normal hills, you would choose a safe path. But since this hill is special, all paths are safe. So obviously, since we want to get to our valley fast, we will choose the angle that gives us *steepest* path, so we check all the angles and take the one that takes the steepest down.
 3. We're going down, down, down, making good progress on our steepest paths. How do we know when we've reached a valley? You got it! We know we've reached a valley when we've stopped going down, i.e. the hill has become flat. Or we start going up again!
 
-It turns out (not by coincidence, but by math), that the steepest path down a function's surface corresponds to the direction of its gradient. To put in terms of our four steps above, gradient descent involves:
+It turns out (not by coincidence, but by math), that the steepest path down a function's surface corresponds to the opposite direction of its gradient. To put in terms of our four steps above, gradient descent involves:
 
 1. Assume starting values for all parameters <script type="math/tex"> (w, b) </script> in our case
 2. Calculate the gradient: The gradient is given by <script type="math/tex"> \displaystyle \left(\frac{ \partial J}{\partial w}, \frac{ \partial J}{\partial b} \displaystyle\right) </script>. Note that the derivative <script type="math/tex"> \displaystyle \frac{ \partial J}{\partial w} </script> is a vector with the same size as <script type="math/tex"> w </script> 
@@ -149,6 +149,8 @@ w &= w - \alpha \frac{ \partial J}{\partial w} \\
 b &= b - \alpha \frac{ \partial J}{\partial b}
 \end{aligned}
 </script>
+<mark>Edit</mark>: There was a mistake in the previous version of the article. I had failed to recognize that the gradient gives the direction of maximum increase of a function. So, correction! We go in the opposite direction of the gradient because the way calculus is set up, the gradient points in the direction of maximum increase of a function. Thanks Asutosh for pointing this out!
+
 4. Repeat till convergence, i.e till the values of <script type="math/tex"> w </script> and <script type="math/tex"> b </script> don't change much with new iterations
 
 "Wait a minute. What's that <script type="math/tex"> \alpha </script> there?", one of you asks.

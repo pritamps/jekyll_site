@@ -108,6 +108,9 @@ Deep Learning is just the application of Large Neural Networks to problems with 
 
 If you stare at the figure above long enough, you'll see what's going on. Deep Learning is in top right of that graph. 
 
+<mark>EDIT</mark>: It was pointed out to me in the comments below that the previous version of this figure was incorrect. I had drawn it so that neural networks were better than traditional algorithms for *all* amounts of data. However, that is really not true. When there isn't enough data, it's not clear what algorithm is better. This is the "Zone of Mystery" marked in the diagram above. In this region, machine learning engineers have to try different algorithms, see which one works best. In this region, the traditional art of machine learning still reigns supreme. What is true is that at some point, traditional algorithms stop improving much. <mark>End Edit</mark>
+
+
 It turns out that the performance of standard machine learning algorithms doesn't improve much if you give them more data. It's almost like they've reached the limit of their "intelligence" and giving them more information just doesn't help. So, we turn to neural networks, and keep adding more and more neurons and layers to it and we notice that the performance keeps improving. 
 
 Awesome! Let's just use the biggest neural network with the largest amount of data. 

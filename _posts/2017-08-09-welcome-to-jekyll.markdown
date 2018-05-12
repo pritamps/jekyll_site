@@ -15,10 +15,10 @@ I want to use this space to keep notes on what I'm learning, and also maybe writ
 2. iOS from the [Stanford CS193p course][cs193p] on iTunes
 
 So hopefully you'll see tutorials on all those things. Good luck!
-
 Cheers,
 Pritam
 
+ 
 [deep-learning]: https://www.coursera.org/specializations/deep-learning
 [cs193p]: https://itunes.apple.com/us/course/developing-ios-10-apps-with-swift/id1198467120
 
