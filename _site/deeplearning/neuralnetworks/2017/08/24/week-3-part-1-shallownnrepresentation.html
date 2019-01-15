@@ -10,7 +10,7 @@
   <meta name="description" content="Before we get neck-deep into deep neural networks, let’s wade into shallow waters and use a two layer network (one hidden layer, one output layer) to explore...">
 
   
-  <link rel="canonical" href="http://localhost:4000/deeplearning/neuralnetworks/2017/08/24/week-3-part-1-shallownnrepresentation.html">
+  <link rel="canonical" href="https://pritamps.github.io/deeplearning/neuralnetworks/2017/08/24/week-3-part-1-shallownnrepresentation.html">
   <link rel="alternate" type="application/rss+xml" title="Programming Blog" href="/feed.xml">
   
   <!-- Google Fonts - Inconsolata -->
@@ -90,7 +90,7 @@
 
 <p>Here’s the mother-diagram for the rest of this post.</p>
 
-<p style="text-align: center;"><img src="http://localhost:4000/assets/dl_week3/shallow_nn.png" alt="Shallow Neural Network Representation" />
+<p style="text-align: center;"><img src="https://pritamps.github.io/assets/dl_week3/shallow_nn.png" alt="Shallow Neural Network Representation" />
 <em>Why the ugly diagram? I just bought one of those drawing tables, so I’m learning how to use it!</em></p>
 
 <p>I’m going to do something silly, just because I can. Even though you probably understand this diagram already, I’m going to build it from the ground up. For even more understanding. Not sure what I mean? Well, read on!</p>
@@ -120,7 +120,7 @@
 
 <h2 id="the-layers">The Layers</h2>
 
-<p style="text-align: center;"><img src="http://localhost:4000/assets/dl_week3/layers.png" alt="Layers in the Shallow Neural Network" />
+<p style="text-align: center;"><img src="https://pritamps.github.io/assets/dl_week3/layers.png" alt="Layers in the Shallow Neural Network" />
 <em>Just the layers</em></p>
 
 <p>As you can see, this neural network has three layers:</p>
@@ -141,7 +141,7 @@
 
 <h2 id="the-activations">The Activations</h2>
 
-<p style="text-align: center;"><img src="http://localhost:4000/assets/dl_week3/activations.png" alt="Activations in the Shallow Neural Network" />
+<p style="text-align: center;"><img src="https://pritamps.github.io/assets/dl_week3/activations.png" alt="Activations in the Shallow Neural Network" />
 <em>Layers and activations</em></p>
 
 <p>Each neuron behaves like we’ve already examined <a href="/deeplearning/neuralnetworks/logisticregression/2017/08/12/week-2-logistic-regression-and-neural-networks-1.html">before</a>: it applies a linear transformation ( <script type="math/tex"> z = w^Tx + b </script> ) and then an activation function to it ( <script type="math/tex"> a(z) = g(w^Tx + b) </script>). With that in mind, we are ready to introduce our new notation for a node.</p>
@@ -182,7 +182,7 @@ w^{[1]^T}_{n_l}
 
 <h3 id="layer-0-to-layer-1">Layer 0 to Layer 1</h3>
 
-<p style="text-align: center;"><img src="http://localhost:4000/assets/dl_week3/layer0to1.png" alt="Connecting Layers 0 and 1" />
+<p style="text-align: center;"><img src="https://pritamps.github.io/assets/dl_week3/layer0to1.png" alt="Connecting Layers 0 and 1" />
 <em>Layers 0 and 1 connected!</em></p>
 
 <p>The arrows are connected. Our input is of size <script type="math/tex"> x \in \mathbb{R}_{3 \ times 1} </script>, i.e <script type="math/tex"> n_x = 3 </script>. Layer 1, our hidden layer is of size <script type="math/tex"> n_h^{[1]} = 4 </script>. Note the notation introduced here: <script type="math/tex"> n_h^{[l]} </script> is the number of nodes in hidden layer <script type="math/tex"> l </script>. So, we can write out, with dimensions:</p>
@@ -206,7 +206,7 @@ a^{[1]}_{4 \times 1} = g^{[1]} (z^{[1]})
 
 <h3 id="layer-1-to-layer-2">Layer 1 to Layer 2</h3>
 
-<p style="text-align: center;"><img src="http://localhost:4000/assets/dl_week3/layer1to2.png" alt="Connecting Layers 1 and 2" />
+<p style="text-align: center;"><img src="https://pritamps.github.io/assets/dl_week3/layer1to2.png" alt="Connecting Layers 1 and 2" />
 <em>Layers 1 and 2 connected!</em></p>
 
 <p>The activations and output of the second layer become:</p>
@@ -337,8 +337,8 @@ db^{[1]} &= \frac{1}{m} dZ^{[1]}
   <div id="disqus_thread"></div>
   <script>
     var disqus_config = function () {
-      this.page.url = 'http://localhost:4000/deeplearning/neuralnetworks/2017/08/24/week-3-part-1-shallownnrepresentation.html';
-      this.page.identifier = 'http://localhost:4000/deeplearning/neuralnetworks/2017/08/24/week-3-part-1-shallownnrepresentation.html';
+      this.page.url = 'https://pritamps.github.io/deeplearning/neuralnetworks/2017/08/24/week-3-part-1-shallownnrepresentation.html';
+      this.page.identifier = 'https://pritamps.github.io/deeplearning/neuralnetworks/2017/08/24/week-3-part-1-shallownnrepresentation.html';
     };
     (function() {
       var d = document, s = d.createElement('script');
